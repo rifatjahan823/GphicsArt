@@ -28,8 +28,8 @@ const Sidebar = () => {
                     <div className='col-md-4 col-12'>
                         {/* ---------------logo-------------- */}
                         <div className='sidebar border'>
-                            <div className='logo'>
-                                <img style={{width:'150px'}} className='img-fluid  mx-auto d-block' src={logo} alt="" />
+                            <div className='sidebar-logo'>
+                                <img style={{width:'150px',}} className='img-fluid  mx-auto d-block' src={logo} alt="" />
                             </div>
                             {/* -----------------logo-bottom-content---------- */}
                             <div className='logo-bottom-content text-center'>
@@ -79,14 +79,55 @@ const Sidebar = () => {
                 </div>
              {/* ------------logo-slider--------- */}
             <div class="row mt-4"style={{paddingLeft:"13px",paddingRight:'25px'}}>
-             <div class="col-4  logo-slider-content ">
-             One of three columns
+             <div class="col-md-4 col-12 logo-slider-content ">
+                <p className='text-center text-white'>Our Respacted Clients</p>
             </div>
-             <div class="col-8 logo-slider-logo ">
+             <div class="col-md-8 col-12 logo-slider-logo ">
                 <div className='slide-logo px-4 py-3'>
-                <Swiper
+                {/* ---------for desktop--------- */}
+                <Swiper className='d-none d-lg-block'
                     spaceBetween={50}
                     slidesPerView={4}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    modules={[ Autoplay]}
+                        navigation
+                        loop={true}
+                        autoplay={{ delay: 5000 }}
+                        pagination={{ clickable: true }}
+                        scrollbar={{ draggable: true }}
+                    >
+                    <SwiperSlide ><img src={logoslide1} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide2} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide3} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide4} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide5} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide6} alt="" /></SwiperSlide>
+                    </Swiper>
+                {/* ---------for tab--------- */}
+                <Swiper className='d-none d-lg-none d-md-block'
+                    spaceBetween={50}
+                    slidesPerView={2}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    modules={[ Autoplay]}
+                        navigation
+                        loop={true}
+                        autoplay={{ delay: 5000 }}
+                        pagination={{ clickable: true }}
+                        scrollbar={{ draggable: true }}
+                    >
+                    <SwiperSlide ><img src={logoslide1} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide2} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide3} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide4} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide5} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide6} alt="" /></SwiperSlide>
+                    </Swiper>
+                {/* ---------for mobile--------- */}
+                <Swiper className='d-block d-md-none'
+                    spaceBetween={50}
+                    slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     modules={[ Autoplay]}

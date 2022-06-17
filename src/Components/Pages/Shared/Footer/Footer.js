@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer'>
-                <p className='text-center'>CODE STUDIO SOFTWARE COMPANY LIMITED</p>
+                <p className='text-center mt-4'>CODE STUDIO SOFTWARE COMPANY LIMITED</p>
                 </div>
             </div>
         </div>

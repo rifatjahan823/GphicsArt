@@ -1,0 +1,13 @@
+.video-content h3{
+    color: black;
+    font-weight:bold;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.video-content p{
+    line-height: 28px;
+    font-weight: normal;
+    font-style: normal;
+    color: #4A6375;
+    font-size: 16px;
+}

@@ -104,4 +104,7 @@
 .slide-logo .carousel-indicators [data-bs-target]{
     display: none;
 }
-
+.slide-logo img{
+    width:130px;
+    height:120px
+}

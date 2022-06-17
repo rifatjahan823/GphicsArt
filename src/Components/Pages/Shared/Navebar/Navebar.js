@@ -24,8 +24,8 @@ const Navebar = () => {
                         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="#home">login</Nav.Link>
+                        <Nav.Link href="#link">sign in</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

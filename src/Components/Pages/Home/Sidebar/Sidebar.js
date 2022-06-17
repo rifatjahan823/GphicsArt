@@ -4,8 +4,15 @@ import { Carousel } from 'react-bootstrap';
 import banner from '../../../Image/home/banner-scaled.jpg';
 import './Sidebar.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import { Autoplay } from 'swiper';
+import logoslide1 from '../../../Image/home/logo-slide-1.png';
+import logoslide2 from '../../../Image/home/logo-slide-2.png';
+import logoslide3 from '../../../Image/home/logo-slide-3.png';
+import logoslide4 from '../../../Image/home/logo-slide-4.png';
+import logoslide5 from '../../../Image/home/logo-slide-5.png';
+import logoslide6 from '../../../Image/home/logo-slide-6.png';
+import 'swiper/css';
+
 
 const Sidebar = () => {
     const [index, setIndex] = useState(0);
@@ -76,10 +83,10 @@ const Sidebar = () => {
              One of three columns
             </div>
              <div class="col-8 logo-slider-logo ">
-                <div className='slide-logo'>
+                <div className='slide-logo px-4 py-3'>
                 <Swiper
                     spaceBetween={50}
-                    slidesPerView={3}
+                    slidesPerView={4}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     modules={[ Autoplay]}
@@ -89,12 +96,12 @@ const Sidebar = () => {
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}
                     >
-                    <SwiperSlide >Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide ><img src={logoslide1} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide2} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide3} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide4} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide5} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={logoslide6} alt="" /></SwiperSlide>
                     </Swiper>
                  </div>
               </div>

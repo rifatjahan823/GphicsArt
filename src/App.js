@@ -9,18 +9,22 @@ import HowItsWork from './Components/Pages/HowItsWork/HowItsWork';
 import Review from './Components/Pages/Review/Review';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
 import Contact from './Components/Pages/Contact/Contact';
+import Navebar from './Components/Pages/Shared/Navebar/Navebar';
+import NotFound from './Components/Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
     <div>
+      <Navebar></Navebar>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/" element={<Services/>} />
-        <Route path="/" element={<Portfolio/>} />
-        <Route path="/" element={<HowItsWork/>} />
-        <Route path="/" element={<Review/>} />
-        <Route path="/" element={<AboutUs/>} />
-        <Route path="/" element={<Contact/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
+        <Route path="/howitswork" element={<HowItsWork/>} />
+        <Route path="/review" element={<Review/>} />
+        <Route path="/aboutus" element={<AboutUs/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer></Footer>
     </div>

@@ -1,3 +1,6 @@
+.home{
+    padding: 35px 0;
+}
 .sidebar{
     padding: 10px 22px;
 }
@@ -98,7 +101,7 @@
     background-color: #FFFFFF;
     border-radius: 0px 3px 3px 0px;
 }
-.logo .carousel-indicators [data-bs-target]{
+.slide-logo .carousel-indicators [data-bs-target]{
     display: none;
 }
 

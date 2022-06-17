@@ -16,7 +16,7 @@ const Sidebar = () => {
   
     return (
         <div className='container'>
-            <div className='home py-4'>
+            <div className='home'>
                 <div className='row g-4'>
                     <div className='col-md-4 col-12'>
                         {/* ---------------logo-------------- */}
@@ -76,7 +76,7 @@ const Sidebar = () => {
              One of three columns
             </div>
              <div class="col-8 logo-slider-logo ">
-                <div className='logo'>
+                <div className='slide-logo'>
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={3}

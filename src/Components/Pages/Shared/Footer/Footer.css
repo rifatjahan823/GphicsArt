@@ -1,0 +1,42 @@
+.footer{
+    background-color: black;
+    color: white;
+}
+.about, .sevices, .offer{
+    border-right: 2px solid #686868;
+}
+.social{
+  margin-top: 75px;  
+}
+.footer-top h6{
+    color: #FFFFFF;
+    font-family: "Lato", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+}
+.footer-top p{
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Lato", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.email{
+    padding: 8px 2px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+.submit{
+    background-color: #E50000;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 10px;
+    color: white;
+    font-family: "Lato", Sans-serif;
+    font-weight: 700;
+}

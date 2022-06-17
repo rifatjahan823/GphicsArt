@@ -1,0 +1,104 @@
+.sidebar{
+    padding: 10px 22px;
+}
+.logo-bottom-content h3{
+    color: #222325;
+    font-family:Helvetica, Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:10px;
+}
+.logo-bottom-content p{
+    color: #62646A;
+    font-family:Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sidebar-btn button{
+    background-color:#1CBC71;
+    color:white;
+    border: none;
+    padding: 12px ;
+    width: 100%;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    letter-spacing:1px;
+    transition:0.5s;
+}
+.sidebar-btn button:hover{
+    background-color:#19A463;
+    color:white;
+    border: none;
+   transform: scale(0.9)
+}
+.description{
+    margin-top: 40px;
+}
+.description h6{
+    color: #404145;
+    font-family:Helvetica, Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.description p{
+    color: #62646A;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+   padding-top: 16px;
+}
+.services p{
+    padding: 7px 7px 7px 7px;
+    background-color: #FFFFFF;
+    color: #1DBF73;
+    font-weight: 700;
+    font-size: 16px;
+}
+.service {
+    width: 100%;
+    height:220px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* -------------carusel-------------- */
+.carousel-control-prev-icon {
+    display: none;
+}
+.carousel-control-next-icon {
+ display: none;
+}
+.carousel-indicators {
+    margin-right:86%;
+    margin-bottom:0.5rem;
+    margin-left: 0%;
+ 
+}
+.carousel-indicators .active {
+    background-color:#246E39 !important;
+    opacity: 1;
+}
+.carousel-indicators [data-bs-target] {
+    width:7.5px;
+    height:7.5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 50%;
+}
+/* -----------logo-slider----------   */
+.logo-slider-content{
+        background-color: #1DBF73;
+        border-radius: 3px 0px 0px 3px;
+}
+.logo-slider-logo{
+    background-color: #FFFFFF;
+    border-radius: 0px 3px 3px 0px;
+}
+.logo .carousel-indicators [data-bs-target]{
+    display: none;
+}
+

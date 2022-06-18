@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye,faHourglass,faGem,faUser,faFileVideo,faStar,faBoxOpen } from '@fortawesome/free-solid-svg-icons';
-import team from '../../Image/about/pexels-anna-shvets-3986958-150x150.jpg'
+import team from '../../Image/about/pexels-anna-shvets-3986958-150x150.jpg';
+import AnimatedNumbers from "react-animated-numbers";
 import './AboutUs.css';
 
 const AboutUs = () => {
@@ -127,24 +128,130 @@ const AboutUs = () => {
                         <div className='row align-items-center justify-content-center text-center'>
                             <div className='col-lg-3 col-md-6 col-12'>
                             <FontAwesomeIcon style={{background:"#9951D01A",color:'#9951D0'}} className='fact-icon' icon={faUser} />
-                                <h1>937M</h1>
+                            <div className='d-flex align-items-center justify-content-center'>
+                                   <span >
+                                <AnimatedNumbers
+                                    animateToNumber={937}
+                                    fontStyle={{ fontSize: 45,fontWeight:700 }}
+                                    configs={[
+                                        {
+                                            mass: 1,
+                                            tension: 220,
+                                            friction: 100,
+                                        },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 130,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 135,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                    ]}
+                                ></AnimatedNumbers>
+                            </span>
+                            <p style={{fontSize:"45px",marginTop:'25px',color:'black',fontWeight:"700"}}>M</p>
+                            </div>  
                                 <p>Total Seller</p>
                             </div>
                             <div className='col-lg-3 col-md-6 col-12'>
                             <FontAwesomeIcon style={{background:"#1ABB691A",color:'#1ABB69'}} className='fact-icon' icon={faFileVideo} />
-                               <h1>640k</h1>
+                            <div className='d-flex align-items-center justify-content-center'>
+                                   <span >
+                                <AnimatedNumbers
+                                    animateToNumber={640}
+                                    fontStyle={{ fontSize: 45,fontWeight:700 }}
+                                    configs={[
+                                        {
+                                            mass: 1,
+                                            tension: 220,
+                                            friction: 100,
+                                        },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 130,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 135,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                    ]}
+                                ></AnimatedNumbers>
+                            </span>
+                            <p style={{fontSize:"45px",marginTop:'25px',color:'black',fontWeight:"700"}}>K</p>
+                            </div>  
                                 <p>Total Video edit</p>
                             </div>
                             <div className='col-lg-3 col-md-6 col-12'>
                             <FontAwesomeIcon style={{background:"#F78F0E1A",color:'#F78F0E'}} className='fact-icon' icon={faStar} />
-                                <h1>546M</h1>
+                            <div className='d-flex align-items-center justify-content-center'>
+                                   <span >
+                                <AnimatedNumbers
+                                    animateToNumber={546}
+                                    fontStyle={{ fontSize: 45,fontWeight:700 }}
+                                    configs={[
+                                        {
+                                            mass: 1,
+                                            tension: 220,
+                                            friction: 100,
+                                        },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 130,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 135,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                    ]}
+                                ></AnimatedNumbers>
+                            </span>
+                            <p style={{fontSize:"45px",marginTop:'25px',color:'black',fontWeight:"700"}}>M</p>
+                            </div>  
                                 <p>Positive Review</p>
                             </div>
                             <div className='col-lg-3 col-md-6 col-12'>
                             <FontAwesomeIcon style={{background:"#FEE7ED",color:'#F5164A'}} className='fact-icon' icon={faBoxOpen} />
-                                   <h1>
-                                    765K
-                                    </h1>
+                                 <div className='d-flex align-items-center justify-content-center'>
+                                   <span >
+                                <AnimatedNumbers
+                                    animateToNumber={765}
+                                    fontStyle={{ fontSize: 45,fontWeight:700 }}
+                                    configs={[
+                                        {
+                                            mass: 1,
+                                            tension: 220,
+                                            friction: 100,
+                                        },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 130,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                        {
+                                            mass: 1,
+                                            tension: 180,
+                                            friction: 135,
+                                        },
+                                        { mass: 1, tension: 280, friction: 90 },
+                                    ]}
+                                ></AnimatedNumbers>
+                            </span>
+                            <p style={{fontSize:"45px",marginTop:'25px',color:'black',fontWeight:"700"}}>K</p>
+                            </div>    
                                 <p>Order recieved</p>
                             </div>
                         </div>

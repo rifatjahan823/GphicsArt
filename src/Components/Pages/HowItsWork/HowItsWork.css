@@ -11,3 +11,9 @@
     color: #4A6375;
     font-size: 16px;
 }
+.read{
+    color:#3EBA79;
+    font-weight: 700;
+    cursor: pointer; 
+    text-transform: capitalize;   
+}

@@ -142,13 +142,7 @@
     border-radius: 50%;
     padding:20px;
 }
-.fact-area h1{
-    color: #333333;
-    font-family: "Poppins", Sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-   margin-top: 15px;
-}
+
 .fact-area p{
     color: #4A6375;
     font-family: "Rubik", Sans-serif;

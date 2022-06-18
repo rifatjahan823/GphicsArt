@@ -1,0 +1,137 @@
+.myflexbox {
+    min-height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    padding-left: 30px;
+    transition:0.5s;
+}
+.myflexbox:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translateY(-2%)
+  
+}
+.myflexbox h2{
+    color: #5A5A5A;
+    font-family: "Roboto", Sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+.about-area p{
+    color: #4A6375;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.about-content li{
+    color: #7a7a7a;
+    font-weight: 500;
+}
+.goal-area{
+    padding: 80px 30px;
+    transition: 0.5s;
+}
+.goal-area:hover{
+    transform: translateY(-2%);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.goal-area p{
+    font-family: "Open Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    color: #363636;
+    transition:1s;
+}
+.goal-area:hover p{
+    transform: scale(1.1);
+}
+.goal-area h3{
+    font-family: "Roboto", Sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 35px;
+    color: #0c0a0a;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.goal-icon{
+    font-size: 35px;
+    color: #EA2E49;
+}
+.team{
+    transition:0.5s;
+}
+.team:hover{
+    transform: translateY(-2%);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.team img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px 100px 100px 100px;
+    box-shadow: 0px 0px 0px 8px rgb(118 141 250 / 27%);
+    margin-bottom: 50px;
+}
+.team h3{
+    color: #000000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.team h4{
+    color: #575757;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -3px;
+}
+.team h4::after{
+    content: '';
+    display: block;
+    width: 25%;
+    height:2px;
+    background-color: #36B772;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.title-border {
+    height:4px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #36B772;
+    overflow: hidden;
+}
+.title-border-inner {
+    height: 4px;
+    width: 5px;
+    animation: pulse 3s ease infinite alternate;
+    float: left;
+    margin: 0 2px;
+  
+}
+@keyframes pulse{
+    0%, 100% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: #fff;
+    }
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(80px, 0);
+    }
+  
+    100% {
+        transform: translate(160px, 0);
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye,faHourglass,faGem } from '@fortawesome/free-solid-svg-icons';
+import { faEye,faHourglass,faGem,faUser,faFileVideo,faStar,faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import team from '../../Image/about/pexels-anna-shvets-3986958-150x150.jpg'
 import './AboutUs.css';
 
@@ -123,7 +123,32 @@ const AboutUs = () => {
                         </div>
                     </div>
                     {/* ----------fact-area------------ */}
-                        
+                     <div className='fact-area bg-white py-5 mt-5 '>
+                        <div className='row align-items-center justify-content-center text-center'>
+                            <div className='col-lg-3 col-md-6 col-12'>
+                            <FontAwesomeIcon style={{background:"#9951D01A",color:'#9951D0'}} className='fact-icon' icon={faUser} />
+                                <h1>937M</h1>
+                                <p>Total Seller</p>
+                            </div>
+                            <div className='col-lg-3 col-md-6 col-12'>
+                            <FontAwesomeIcon style={{background:"#1ABB691A",color:'#1ABB69'}} className='fact-icon' icon={faFileVideo} />
+                               <h1>640k</h1>
+                                <p>Total Video edit</p>
+                            </div>
+                            <div className='col-lg-3 col-md-6 col-12'>
+                            <FontAwesomeIcon style={{background:"#F78F0E1A",color:'#F78F0E'}} className='fact-icon' icon={faStar} />
+                                <h1>546M</h1>
+                                <p>Positive Review</p>
+                            </div>
+                            <div className='col-lg-3 col-md-6 col-12'>
+                            <FontAwesomeIcon style={{background:"#FEE7ED",color:'#F5164A'}} className='fact-icon' icon={faBoxOpen} />
+                                   <h1>
+                                    765K
+                                    </h1>
+                                <p>Order recieved</p>
+                            </div>
+                        </div>
+                    </div>   
                 </div>
             </div>
         </div>

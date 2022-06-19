@@ -12,9 +12,15 @@ import logoslide4 from '../../../Image/home/logo-slide-4.png';
 import logoslide5 from '../../../Image/home/logo-slide-5.png';
 import logoslide6 from '../../../Image/home/logo-slide-6.png';
 import 'swiper/css';
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const Sidebar = () => {
+    // ----fore type writer----------
+   const handleDone = () => {
+        console.log(`Done after 5 loops!`)
+      }
+//    -------------for slider---------   
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -80,7 +86,17 @@ const Sidebar = () => {
              {/* ------------logo-slider--------- */}
             <div class="row mt-4"style={{paddingLeft:"13px",paddingRight:'25px'}}>
              <div class="col-md-4 col-12 logo-slider-content ">
-                <p className='text-center text-white'>Our Respacted Clients</p>
+                <p className='text-center text-white'>Our {' '}<Typewriter
+                    words={['Respacted Clients']}
+                    loop={Infinity}
+                    cursor
+                    cursorStyle=''
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                    onLoopDone={handleDone}
+                
+                /></p>
             </div>
              <div class="col-md-8 col-12 logo-slider-logo ">
                 <div className='slide-logo px-4 py-3'>

@@ -1,23 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Details from '../Details/Details';
+import useLogo from '../Hooks/useLogo';
 
 const AllLogo = () => {
-    const [logos,setLogos]=useState([]);
-    useEffect(()=>{
-        fetch('logos.json')
-        .then(res=>res.json())
-        .then(data=>setLogos(data))
-    },[])
+    const logo =useLogo('https://raw.githubusercontent.com/rifatjahan823/GphicsArt/main/public/logos.json');
     return (
         <div>
-            {
-               logos.map(logos=><Details
-                logos={logos}
-               key={logos.id}
+           <div className='row g-4'>
+           {
+               logo.map(logo=><Details
+                logo={logo}
+               key={logo.id}
                ></Details>)
            }
-        </div>
-    );
+         </div> 
+        </div>)
 };
 
 export default AllLogo;

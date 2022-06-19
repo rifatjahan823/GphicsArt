@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook,faEnvelope,faPhone,faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 import { useForm } from 'react-hook-form';
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 
 const Contact = () => {
+    const position = [51.505, -0.09]
          //for from
  const { register, formState: { errors }, handleSubmit }=useForm();
     return (
@@ -129,8 +131,18 @@ const Contact = () => {
              </form>
              </div>
              {/* ----------------Map-------------- */}
-             <div className='map'>
-
+             <div style={{width:"100%",height:'300px'}} className='map'>
+             <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
+                <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={position}>
+                <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+                </Marker>
+            </MapContainer>
              </div>
             </div>
         </div>

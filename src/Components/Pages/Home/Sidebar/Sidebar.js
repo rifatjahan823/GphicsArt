@@ -79,6 +79,9 @@ const Sidebar = () => {
                             <Carousel.Item>
                                <img style={{width:"97.3%",height:"200px",}} src={banner } alt="" />
                             </Carousel.Item>
+                            <Carousel.Item>
+                               <img style={{width:"97.3%",height:"200px",}} src={banner } alt="" />
+                            </Carousel.Item>
                             </Carousel>
                         </div>
                     </div>

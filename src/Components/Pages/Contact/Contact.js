@@ -44,7 +44,7 @@ const Contact = () => {
             <div className='row'>  
         {/* ----------------First Name--------------- */}
             <div className="col-md-6 col-12">
-               <label for="inputName" className="form-label">Last Name</label>
+               <label for="inputName" className="form-label">First Name</label>
                  <input type="text" className="form-control" id="inputName" placeholder="First Name"{...register("firstName",{
                     required:{
                      value:true,

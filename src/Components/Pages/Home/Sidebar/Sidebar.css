@@ -19,7 +19,7 @@
     font-weight: 600;
 }
 .sidebar-btn button{
-    background-color:#1CBC71;
+    background-color:#36B772;
     color:white;
     border: none;
     padding: 12px ;
@@ -36,7 +36,8 @@
     background-color:#19A463;
     color:white;
     border: none;
-   transform: scale(0.9)
+    transform: translateY(-2%);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 .description{
     margin-top: 40px;

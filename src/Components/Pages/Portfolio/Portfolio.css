@@ -1,10 +1,10 @@
 li a:hover{
-    background-color: #1CBC71 !important;
+    background-color: #36B772 !important;
     color:white !important
 }
 li a{
     transition:0.5s 
 }
 .icon{
-    color: #1CBC71;
+    color: #36B772;
 }

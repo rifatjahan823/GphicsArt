@@ -22,6 +22,8 @@ import Website from './Components/Pages/Portfolio/Catagory/Website';
 import Ux from './Components/Pages/Portfolio/Catagory/Ux';
 import Logo from './Components/Pages/Portfolio/Catagory/Logo';
 import AllLogo from './Components/Pages/Portfolio/Catagory/AllLogo';
+import SignIn from './Components/Pages/Shared/SignIn/SignIn';
+import SignUp from './Components/Pages/Shared/SignUp/SignUp';
 
 
 
@@ -50,6 +52,8 @@ function App() {
         <Route path="/review" element={<Review/>} />
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/signin" element={<SignIn/>} />
+        <Route path="/signup" element={<SignUp/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer></Footer>

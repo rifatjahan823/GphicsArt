@@ -12,7 +12,7 @@ const HowItsWork = () => {
     const [read6,setRead6]=useState(false);
    
     return (
-        <div className='container py-4'>
+        <div className='container-fluid py-4 px-4'>
             <div className='row g-4'>
                 <div className='col-lg-4 col-md-6 col-12'>
                     <video width='100%' controls>

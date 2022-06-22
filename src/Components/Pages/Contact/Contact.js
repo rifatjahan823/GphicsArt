@@ -9,7 +9,7 @@ const Contact = () => {
          //for from
  const { register, formState: { errors }, handleSubmit }=useForm();
     return (
-        <div className='container'>
+        <div className='container-fluid px-4'>
             <div className='contact-area'>
                 {/* -----------contact------------ */}
                 <div className='contact text-center py-5 my-5'>

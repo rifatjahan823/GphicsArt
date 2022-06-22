@@ -6,7 +6,7 @@ const Details = ({logo}) => {
     return (
          <div className='card-group col-lg-6 col-md-6 col-sm-12 '>
            <div className='logoDetails text-center'>
-            <img className='img-fluid  mx-auto d-block' src={strMealThumb} alt="" />
+              <img className='img-fluid  mx-auto d-block' src={strMealThumb} alt="" />
             <div className='content'>
                 <h6>Name:{strMeal}</h6>
                 <div className='row'>

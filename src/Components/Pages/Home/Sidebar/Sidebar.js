@@ -28,7 +28,7 @@ const Sidebar = () => {
     };
   
     return (
-        <div className='container'>
+        <div className='container-fluid px-4'>
             <div className='home'>
                 <div className='row g-4'>
                     <div className='col-md-4 col-12'>
@@ -65,29 +65,29 @@ const Sidebar = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum, earum odit aliquid ratione dolor vero nesciunt a beatae debitis voluptatibus harum facilis sint incidunt, aperiam maxime eius sequi libero, non reprehenderit porro hic. Error porro in, veritatis ab illum optio neque molestias repellendus labore, fugiat aut illo minus laboriosam.
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum, earum odit aliquid ratione dolor vero nesciunt a beatae debitis voluptatibus harum facilis sint incidunt, aperiam maxime eius sequi libero, non reprehenderit porro hic. Error porro in, veritatis ab illum optio neque molestias repellendus labore, fugiat aut illo minus laboriosam.
                             </div>
-                            <div className='mt-1' style={{borderTop:'10px solid white',marginRight:'20px'}}></div>
+                            <div className='mt-1' style={{borderTop:'10px solid white',}}></div>
                         </div>
                         {/* -------carusel-area------------- */}
                         <div className='carusel'>
                              <Carousel activeIndex={index} onSelect={handleSelect}>
                             <Carousel.Item>
-                                <img style={{width:"97.3%",height:"200px",}} src={banner } alt="" />
+                                <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
                             </Carousel.Item>
                             <Carousel.Item>
-                               <img style={{width:"97.3%",height:"200px",}} src={banner } alt="" />
+                               <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
                             </Carousel.Item>
                             <Carousel.Item>
-                               <img style={{width:"97.3%",height:"200px",}} src={banner } alt="" />
+                               <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
                             </Carousel.Item>
                             <Carousel.Item>
-                               <img style={{width:"97.3%",height:"200px",}} src={banner } alt="" />
+                               <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
                             </Carousel.Item>
                             </Carousel>
                         </div>
                     </div>
                 </div>
              {/* ------------logo-slider--------- */}
-            <div class="row mt-4"style={{paddingLeft:"13px",paddingRight:'25px'}}>
+            <div class="row mt-4 "style={{padding:"0 13px"}}>
              <div class="col-md-4 col-12 logo-slider-content ">
                 <p className='text-center text-white'>Our {' '}<Typewriter
                     words={['Respacted Clients']}

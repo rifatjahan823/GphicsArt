@@ -8,7 +8,7 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <div className='abouts py-5'>
-            <div className='container'>
+            <div className='container-fluid px-4'>
                 <div className='about-area'>
                     {/* ----------about top content----------- */}
                     <div className='row g-4 '>

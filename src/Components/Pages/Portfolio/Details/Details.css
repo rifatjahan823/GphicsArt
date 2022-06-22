@@ -1,6 +1,6 @@
 .logoDetails img{
-   width: 407px;
-   height: 319px;
+  width: 370px;
+ height:370px;
 }
 .logoDetails{
 position: relative;
@@ -34,15 +34,16 @@ transition: 0.5s;
        padding: 0 8px;
    }
 
+  
    @media screen and (max-width:990px) and (min-width:768px){
     .logoDetails img{
-      width: 307px;
-      height:219px;
+      width: 225px;
+      height:225px;
    }
   }
    @media screen and (max-width:767px) and (min-width:576px){
     .logoDetails{
-      margin-left: 8%;
+      margin: 0 18%;
     }
   }
    @media screen and (max-width:577px) {
@@ -50,4 +51,3 @@ transition: 0.5s;
       width: 100%;
     }
   }
-   

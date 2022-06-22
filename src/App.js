@@ -24,6 +24,8 @@ import Logo from './Components/Pages/Portfolio/Catagory/Logo';
 import AllLogo from './Components/Pages/Portfolio/Catagory/AllLogo';
 import SignIn from './Components/Pages/Shared/SignIn/SignIn';
 import SignUp from './Components/Pages/Shared/SignUp/SignUp';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -57,6 +59,7 @@ function App() {
         <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import Loading from '../Loading/Loading';
 import logo from '../../../Image/home/logo.png'
 import './signUp.css'
 import Google from '../SocialLogin/Google/Google';
+import Facebook from '../SocialLogin/Facebook/Facebook';
 
 const SignUp = () => {
         //SignUp
@@ -34,13 +35,14 @@ const SignUp = () => {
 return (
        <div className='container'>
         <div className='mx-auto form-container'>
-        <div className='d-flex align-items-center justify-content-center login-title'>
-        <div><h3><span style={{color:"#36B772"}}>Register</span> with</h3></div>
-        <div><img className='img-fluid' src={logo} alt="" /></div>
-      </div>
+        <div className='text-center signin-title'>
+        <h3>Register with</h3>
+        <h5>Gphics Art Studio</h5>
+        </div>
       {/* -------social-login------------ */}
         <div>
             <Google></Google>
+            <Facebook></Facebook>
         </div>
       <form style={{marginTop:"-16px"}} onSubmit={handleSubmit(onSubmit)}>     
     {/* ----------------Name--------------- */}

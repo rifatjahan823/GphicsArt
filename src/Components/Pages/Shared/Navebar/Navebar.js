@@ -8,7 +8,7 @@ const Navebar = () => {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' className='menu border-bottom'>
-                <Container>
+                <Container fluid className='px-4'>
                     <Navbar.Brand as={Link} to="/">
                     <img className='logo' src={logo} alt="" />
                     </Navbar.Brand>
@@ -25,7 +25,7 @@ const Navebar = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link as={Link} to="/signin">Login</Nav.Link>
-                        <Nav.Link as={Link} to="/signup">Register</Nav.Link>
+                        <Nav.Link className='signup' as={Link} to="/signup">Register</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

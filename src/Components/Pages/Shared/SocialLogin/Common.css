@@ -1,0 +1,21 @@
+.sign-btn{
+   background-color: #fffefc;;
+   padding: 7px ;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   width: 100%;
+   font-size: 16px;
+   font-weight: 600;
+   color: #62646a;
+   border-radius: 4px;
+}
+.sign-btn:hover{
+    background-color: #F7F7F7;
+}
+.fb-btn{
+    background: #4267b2;
+    border: 1px solid #4267b2;
+    color:white;
+}
+.fb-btn:hover{
+    background-color: #5577BA;
+}

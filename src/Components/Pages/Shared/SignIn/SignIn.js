@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import {  useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import {  useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './SignIn.css'
 import auth from '../../../../firebase.init';
 import Loading from '../Loading/Loading';
 import Google from '../SocialLogin/Google/Google';
-import logo from '../../../Image/home/logo.png'
-
+import Facebook from '../SocialLogin/Facebook/Facebook';
+import { toast } from 'react-toastify';
 
 const SignIn = () => {
            //login
@@ -17,6 +17,10 @@ const SignIn = () => {
             loading,
             error,
           ] = useSignInWithEmailAndPassword(auth); 
+          //reset password
+          const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+            auth
+            );
       //for from
       const navigate = useNavigate()
       const { register, formState: { errors }, handleSubmit } = useForm();
@@ -35,20 +39,23 @@ const SignIn = () => {
       if(loading){
         return <Loading></Loading>
       }
-    
+      if(sending){
+        return <Loading></Loading>;
+      }
     return (
         <div className='container'>
-            <div className='mx-auto form-container px-3'>
-                <div className='d-flex align-items-center justify-content-center login-title'>
-                <div><h3><span style={{color:"#36B772"}}>Register</span> with</h3></div>
-                <div><img className='img-fluid' src={logo} alt="" /></div>
+            <div className='mx-auto form-container '>
+                <div className='text-center signin-title'>
+                  <h3>Login with</h3>
+                  <h5>Gphics Art Studio</h5>
                </div>
             {/* -------social-login------------ */}
                 <div>
                     <Google></Google>
+                    <Facebook></Facebook>
                 </div>
         {/* --------------form part-----------     */}
-             <form onSubmit={handleSubmit(onSubmit)}>    
+             <form style={{marginTop:"-12px"}} onSubmit={handleSubmit(onSubmit)}>    
                 <div className="">
                 <label for="exampleFormControlInput1" className="form-label">Email address</label>
                 <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"{...register("email", {
@@ -88,10 +95,20 @@ const SignIn = () => {
             {
                 error?.message  && <p className='text-danger'>{error.message}</p>
             }
-
-            <input className='common-button mb-3' type="submit" vale="Login" />
+            {
+                error1?.message  && <p>{error1.message}</p>
+            }
+            <p>Forget Password?<Link to="" className=" pe-auto fw-bold text-decoration-none" style={{color:"#36B772"}}onClick={async (data) => {
+              if(data.email){
+              await sendPasswordResetEmail();
+              toast('Sent email');
+             }else{
+              toast('plese enter your email'); 
+             }
+             }}>Reset Password</Link></p>
+              <input className=' common-button mb-3' type="submit" value="Login"/>
             </form>  
-            <p >Already have an account? <Link style={{color:"#36B772"}} to="/signup" className="pe-auto fw-bold">Please Register</Link></p>
+            <p >New to here? <Link style={{color:"#36B772"}} to="/signup" className="pe-auto fw-bold">Please Register</Link></p>
           </div>
         </div>
     );

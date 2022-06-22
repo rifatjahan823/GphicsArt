@@ -6,8 +6,8 @@ import { faFilter,faEraser } from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = () => {
   return (
-    <div className='container'>
-          <div className='row align-items-start py-5'>
+    <div className='container-fluid'>
+          <div className='row align-items-start py-5 px-4'>
         <div className='col-lg-4 col-md-5 col-12 mb-4'>
             <div className='border pb-4 ' >
              <div className='row border-bottom pt-3 mb-4 px-3' style={{margin:"0 0px",fontWeight:'500'}}>

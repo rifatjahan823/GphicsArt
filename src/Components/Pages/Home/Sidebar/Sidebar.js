@@ -71,16 +71,16 @@ const Sidebar = () => {
                         <div className='carusel'>
                              <Carousel activeIndex={index} onSelect={handleSelect}>
                             <Carousel.Item>
-                                <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
+                                <img style={{width:"100%",height:"240px",}} src={banner } alt="" />
                             </Carousel.Item>
                             <Carousel.Item>
-                               <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
+                               <img style={{width:"100%",height:"240px",}} src={banner } alt="" />
                             </Carousel.Item>
                             <Carousel.Item>
-                               <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
+                               <img style={{width:"100%",height:"240px",}} src={banner } alt="" />
                             </Carousel.Item>
                             <Carousel.Item>
-                               <img style={{width:"100%",height:"200px",}} src={banner } alt="" />
+                               <img style={{width:"100%",height:"240px",}} src={banner } alt="" />
                             </Carousel.Item>
                             </Carousel>
                         </div>
